@@ -1,0 +1,76 @@
+/* CSS Document */
+.hidden-xs, .sr-only{
+	display:none !important;
+	visibility:hidden !important;	
+}
+.pull-left{
+	float:left;	
+}
+.pull-right{
+	float:right;	
+}
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align:right;
+}
+.text-center{
+	text-align: center;
+}
+.margin-bottom{
+	margin-bottom:20px;
+}
+.margin-top{
+	margin-top:20px;
+}
+.bg-primary, .bg-white{
+	background: @brand-primary;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.bg-primary{
+	h1,h2,h3,h4,h5,h6{
+		color: #fff;
+	}
+}
+.bg-white{
+	background: #fff;	
+}
+.bg-white-xs{
+	background: #fff;
+	margin: 0 -@column-gutter-width-xs 20px;
+	padding: 15px @column-gutter-width-xs;
+	color: @text-color;
+	strong{
+		color: @brand-light;
+	}
+}
+@media (min-width: @screen-sm) {
+	.hidden-xs{
+		display:block !important;
+		visibility:visible !important;
+	}
+	span.hidden-xs{
+		display: inline-block !important;
+	}
+	.hidden-sm{
+		display: none !important;
+		visibility: hidden !important;
+	}
+	.bg-white-xs{
+		background: inherit;
+		margin: 0;
+		padding: 0;
+		color: #fff;
+		a{
+			color: #fff;
+		}
+	}
+}
+@media (min-width: @screen-md) {
+	.hidden-md{
+		display: none !important;
+		visibility: hidden !important;
+	}
+}

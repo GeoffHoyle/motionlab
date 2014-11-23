@@ -1,0 +1,282 @@
+/* CSS Document */
+//Variables
+*{
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;	
+}
+.row{
+	clear:both;
+	overflow:hidden;
+	display:block;
+	margin-left: -@column-gutter-width-xs;
+	margin-right: -@column-gutter-width-xs;	
+} 
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9{
+	float:left;
+	padding-left:@column-gutter-width-xs;
+	padding-right:@column-gutter-width-xs;
+	position:relative;
+	width: 100%;
+}
+.col-xs-1{width:25%;}
+.col-xs-2{width:50%;}
+.col-xs-3{width:75%;}
+.col-xs-4{width:100%;}
+
+.container{
+	padding-left:@column-gutter-width-xs;
+	padding-right:@column-gutter-width-xs;
+	margin-left:auto;
+	margin-right:auto;	
+}
+.main{
+	padding-left:@column-gutter-width-xs;
+	padding-right:@column-gutter-width-xs;
+}
+footer{
+	background: @gray-dark;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+@media (min-width: @screen-sm) {
+	.row{
+		margin-left: -@column-gutter-width-sm;
+		margin-right: -@column-gutter-width-sm;
+	}
+	
+	.col-xs-1,
+	.col-xs-2,
+	.col-xs-3,
+	.col-xs-4,
+	.col-sm-1,
+	.col-sm-2,
+	.col-sm-3,
+	.col-sm-4,
+	.col-sm-5,
+	.col-sm-6,
+	.col-md-1,
+	.col-md-2,
+	.col-md-3,
+	.col-md-4,
+	.col-md-5,
+	.col-md-6,
+	.col-md-7,
+	.col-md-8,
+	.col-md-9,
+	.col-lg-1,
+	.col-lg-2,
+	.col-lg-3,
+	.col-lg-4,
+	.col-lg-5,
+	.col-lg-6,
+	.col-lg-7,
+	.col-lg-8,
+	.col-lg-9,
+	.container,
+	.main{
+		padding-left:@column-gutter-width-sm;
+		padding-right:@column-gutter-width-sm;
+	}
+	.col-sm-1{
+		width: percentage(1/9);
+	}
+	.col-sm-2{
+		width: percentage(2/9);
+	}
+	.col-sm-3{
+		width: percentage(3/9);
+	}
+	.col-sm-4{
+		width: percentage(4/9);
+	}
+	.col-sm-5{
+		width: percentage(5/9);
+	}
+	.col-sm-6{
+		width: percentage(6/9);
+	}
+	.col-sm-7{
+		width: percentage(7/9);
+	}
+	.col-sm-8{
+		width: percentage(8/9);
+	}
+	.col-sm-9{
+		width: percentage(9/9);
+	}
+	//Stuff for changing the order
+	.col-sm-push-1{
+		left: percentage(1/9);
+	}
+	.col-sm-push-2{
+		left: percentage(2/9);
+	}
+	.col-sm-push-3{
+		left: percentage(3/9);
+	}
+	.col-sm-push-4{
+		left: percentage(4/9);
+	}
+	.col-sm-push-5{
+		left: percentage(5/9);
+	}
+	.col-sm-push-6{
+		left: percentage(6/9);
+	}
+	.col-sm-push-7{
+		left: percentage(7/9);
+	}
+	.col-sm-push-8{
+		left: percentage(8/9);
+	}
+	.col-sm-push-9{
+		left: percentage(9/9);
+	}
+	.col-sm-pull-1{
+		right: percentage(1/9);
+	}
+	.col-sm-pull-2{
+		right: percentage(2/9);
+	}
+	.col-sm-pull-3{
+		right: percentage(3/9);
+	}
+	.col-sm-pull-4{
+		right: percentage(4/9);
+	}
+	.col-sm-pull-5{
+		right: percentage(5/9);
+	}
+	.col-sm-pull-6{
+		right: percentage(6/9);
+	}
+	.col-sm-pull-7{
+		right: percentage(7/9);
+	}
+	.col-sm-pull-8{
+		right: percentage(8/9);
+	}
+	.col-sm-pull-9{
+		right: percentage(9/9);
+	}
+}
+@media (min-width: @screen-md) {
+	.container{
+		width: 980px;
+	}
+	.col-md-1{
+		width: percentage(1/9);
+	}
+	.col-md-2{
+		width: percentage(2/9);
+	}
+	.col-md-3{
+		width: percentage(3/9);
+	}
+	.col-md-4{
+		width: percentage(4/9);
+	}
+	.col-md-5{
+		width: percentage(5/9);
+	}
+	.col-md-6{
+		width: percentage(6/9);
+	}
+	.col-md-7{
+		width: percentage(7/9);
+	}
+	.col-md-8{
+		width: percentage(8/9);
+	}
+	.col-md-9{
+		width: percentage(9/9);
+	}
+	//Stuff for changing the order
+	.col-md-push-1{
+		left: percentage(1/9);
+	}
+	.col-md-push-2{
+		left: percentage(2/9);
+	}
+	.col-md-push-3{
+		left: percentage(3/9);
+	}
+	.col-md-push-4{
+		left: percentage(4/9);
+	}
+	.col-md-push-5{
+		left: percentage(5/9);
+	}
+	.col-md-push-6{
+		left: percentage(6/9);
+	}
+	.col-md-push-7{
+		left: percentage(7/9);
+	}
+	.col-md-push-8{
+		left: percentage(8/9);
+	}
+	.col-md-push-9{
+		left: percentage(9/9);
+	}
+	.col-md-pull-1{
+		right: percentage(1/9);
+	}
+	.col-md-pull-2{
+		right: percentage(2/9);
+	}
+	.col-md-pull-3{
+		right: percentage(3/9);
+	}
+	.col-md-pull-4{
+		right: percentage(4/9);
+	}
+	.col-md-pull-5{
+		right: percentage(5/9);
+	}
+	.col-md-pull-6{
+		right: percentage(6/9);
+	}
+	.col-md-pull-7{
+		right: percentage(7/9);
+	}
+	.col-md-pull-8{
+		right: percentage(8/9);
+	}
+	.col-md-pull-9{
+		right: percentage(9/9);
+	}
+}
+@media (min-width: @screen-lg) {
+	.container{
+		width:1200px;
+	}
+}

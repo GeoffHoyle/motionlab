@@ -1,0 +1,16 @@
+{
+  "name": "Motionlab",
+  "version": "0.0.0",
+  "authors": [
+    "Geoff Hoyle <Geoff.Hoyle@daisygroupplc.com>"
+  ],
+  "description": "Dependencies for Motionlab test site",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

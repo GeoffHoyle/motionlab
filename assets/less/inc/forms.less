@@ -1,0 +1,39 @@
+/* CSS Document */
+form{
+	margin: 10px 0;	
+}
+input, textarea{
+	background:#fff;
+	border:1px solid rgba(0,0,0,0.1);
+	height:43px;
+	display:block;
+	padding:7px;
+	line-height:29px;
+	width:100%;
+	//margin-bottom: 10px;	
+}
+textarea{
+	height:185px;
+}
+label{
+	margin-bottom: 10px;
+	display: block;
+}
+@media (min-width: @screen-sm) {
+	label{
+		margin-bottom: 25px;
+	}
+	input{
+		&.btn{
+			width:auto;
+		}
+	}
+	textarea{
+		height: 200px;
+	}
+	form{
+		.btn{
+			margin-bottom: 25px;
+		}
+	}
+}
